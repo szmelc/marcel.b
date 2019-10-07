@@ -1,0 +1,8 @@
+.homepage {
+  &__picture {
+    background-image: url('balinski_marcel_mobile.jpg');
+    @include parallax-bg;
+    width: 100%;
+    height: 600px;
+  }
+}

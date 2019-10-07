@@ -7,10 +7,13 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0.0'
 
-gem 'sass-rails', '~> 5'
-gem 'webpacker', '~> 4.0'
-gem 'turbolinks', '~> 5'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'haml-rails'
 gem 'jbuilder', '~> 2.7'
+gem 'jquery-rails'
+gem 'sass-rails', '~> 5'
+gem 'turbolinks', '~> 5'
+gem 'webpacker', '~> 4.0'
 
 # gem 'image_processing', '~> 1.2'
 
@@ -23,10 +26,10 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rubocop'
   gem 'rubocop-rails'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
 end
 
