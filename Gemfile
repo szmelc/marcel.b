@@ -7,6 +7,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0.0'
 
+gem 'activeadmin'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'haml-rails'
 gem 'jbuilder', '~> 2.7'
