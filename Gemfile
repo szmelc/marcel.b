@@ -9,6 +9,7 @@ gem 'rails', '~> 6.0.0'
 
 gem 'activeadmin'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'devise'
 gem 'haml-rails'
 gem 'jbuilder', '~> 2.7'
 gem 'jquery-rails'
