@@ -1,4 +1,11 @@
 .mobile-nav.navbar-fixed-top.visible-xs.visible-sm
   .mobile-nav__burger-wrapper
     .mobile-nav__hamburger-menu
+  .mobile-nav__language-picker
+    - if current_page?(locale: :pl) || I18n.locale == :pl
+      = link_to(options = { locale: "en" }) do
+        %span.mobile-nav__language.mobile-nav__language--en EN
+    - elsif current_page?(locale: :en)
+      = link_to(options = { locale: "pl" }) do
+        %span.mobile-nav__language.mobile-nav__language--pl PL
 .mobile-nav__slider

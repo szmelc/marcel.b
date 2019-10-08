@@ -1,4 +1,4 @@
 .homepage__concerts-wrapper
   - concerts.each do |concert|
     = render 'concert', concert: concert
-  = button_tag t('homepage.all_concerts'), type: 'button', class: "button homepage__button homepage__button--more-concerts", onclick: "location.href = '#{root_path}'"
+  = button_tag t('homepage.all_concerts'), type: 'button', class: "button homepage__button homepage__button--more-concerts", onclick: "location.href = '#{concerts_path}'"

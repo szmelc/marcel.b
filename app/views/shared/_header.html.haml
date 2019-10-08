@@ -1,6 +1,7 @@
 .header
-  %h1.header-title= t('header.marcel')
-  %h2.header-subtitle
-    = t('header.pianist')
-    |
-    = t('header.composer')
+  = link_to root_path do
+    %h1.header-title= t('header.marcel')
+    %h2.header-subtitle
+      = t('header.pianist')
+      |
+      = t('header.composer')

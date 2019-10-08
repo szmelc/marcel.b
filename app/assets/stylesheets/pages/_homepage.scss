@@ -1,4 +1,7 @@
 .homepage {
+  background-image: url('homepage_bg.svg');
+  @include cover-bg;
+  min-height: 85vh;
   &__picture {
     background-image: url('balinski_marcel_mobile.jpg');
     @include parallax-bg;

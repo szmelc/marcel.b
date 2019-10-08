@@ -2,6 +2,11 @@
   font-family: "MontserratBold";
 }
 
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration:none;
+  color: $black;
+}
+
 h1 {
   font-size: $fs-1;
 }
