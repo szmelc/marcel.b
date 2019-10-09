@@ -1,4 +1,11 @@
 pl:
+  navigation:
+    bio: "bio"
+    concerts: "koncerty"
+    projects: "projekty"
+    gallery: "galeria"
+    press: "press"
+    contact: "kontakt"
   header:
     marcel: "Marcel Baliński"
     pianist: "pianista"

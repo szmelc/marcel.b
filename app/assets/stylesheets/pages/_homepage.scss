@@ -1,13 +1,34 @@
 .homepage {
+  @include contain-bg;
   background-image: url('homepage_bg.svg');
-  @include cover-bg;
   min-height: 85vh;
+
+  @media(min-width: $screen-md) {
+    background-position: right;
+    display: flex;
+    margin-left: 130px;
+    max-height: calc(100vh - 121px);
+    min-height: calc(100vh - 121px);
+    // max-height: 100vh;
+    // min-height: 100vh;
+  }
+
+  @media(min-width: $screen-lg) {
+    margin-left: 250px;
+  }
+
   &__picture {
+    @include parallax-bg;
     position: relative;
     background-image: url('balinski_marcel_mobile.jpg');
-    @include parallax-bg;
     width: 100%;
     height: 600px;
+    @media(min-width: $screen-md) {
+      height: 100vh;
+      @include cover-bg;
+      height: auto;
+      width: 70%;
+    }
   }
 
   &__mobile-music-socials {
@@ -18,6 +39,10 @@
     width: 10%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    @media(min-width: $screen-md) {
+      display: none;
+    }
   }
 
   &__mobile-music-link {
@@ -42,6 +67,10 @@
     position: relative;
     width: 100%;
     transform: translate(0, -70px);
+    @media(min-width: $screen-md) {
+      transform: translate(-75px, 0px);
+      padding: 0;
+    }
   }
 
   &__concert {
@@ -58,6 +87,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media(min-width: $screen-md) {
+      border: 4px solid $black;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &__concert-date-divider {
@@ -72,6 +106,18 @@
     height: 125px;
     width: 100%;
     border: 6px solid $black;
+    padding-left: 30px;
+    @media(min-width: $screen-md) {
+      border: 4px solid $black;
+      padding-left: 15px;
+      width: 60%;
+      min-width: 385px;
+      max-width: 640px;
+      height: 80px;
+    }
+    @media(min-width: $screen-lg) {
+      padding-left: 30px;
+    }
   }
 
   &__concert-name-container {
@@ -82,12 +128,22 @@
     flex-direction: column;
   }
 
+  &__concert-name {
+    @media(min-width: $screen-md) {
+      font-size: $fs-7;
+    }
+  }
+
   &__concert-location-details {
     display: flex;
     flex-direction: column;
     border-left: 3px solid $black;
     width: 30%;
     height: 100%;
+    @media(min-width: $screen-md) {
+      margin-left: 25px;
+      width: 35%;
+    }
   }
 
   &__concert-location {
@@ -95,6 +151,9 @@
     text-align: center;
     vertical-align: middle;
     line-height: 62.5px;
+    @media(min-width: $screen-md) {
+      line-height: 40px;
+    }
     &--city {
       border-bottom: 3px solid $black
     }
@@ -106,21 +165,26 @@
   &__concert-city,
   &__concert-venue {
     font-size: $fs-6;
+    @media(min-width: $screen-md) {
+      font-size: $fs-9;
+    }
   }
 
   &__concert-date {
     text-align: center;
     display: block;
     font-size: $fs-5;
-  }
-
-  &__concert-details {
-    padding-left: 30px;
+    @media(min-width: $screen-md) {
+      font-size: $fs-7;
+    }
   }
 
   &__button {
     &--more-concerts {
       float: right;
+      @media(min-width: $screen-md) {
+        float: left;
+      }
     }
   }
 }

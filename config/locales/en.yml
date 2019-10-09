@@ -30,6 +30,13 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  navigation:
+    bio: "bio"
+    concerts: "concerts"
+    projects: "projects"
+    gallery: "gallery"
+    press: "press"
+    contact: "contact"
   header:
     marcel: "Marcel Baliński"
     pianist: "pianist"

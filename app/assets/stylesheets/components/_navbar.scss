@@ -2,6 +2,38 @@ $bar-width: 55px;
 $bar-height: 8px;
 $bar-spacing: 18px;
 
+.nav {
+  background: $green;
+  height: 23px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 130px;
+
+  @media(min-width: $screen-lg) {
+    margin: 0 250px;
+  }
+
+  &__menu-item {
+    display: inline-block;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    &.active {
+      background: $orange;
+      span {
+        color: $white;
+      }
+    }
+  }
+
+  &__menu-item-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+}
+
 .mobile-nav {
   width: 100%;
   height: 80px;
