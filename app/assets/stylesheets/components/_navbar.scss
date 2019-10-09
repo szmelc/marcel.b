@@ -18,6 +18,7 @@ $bar-spacing: 18px;
 
   @media(min-width: $screen-lg) {
     margin: 0 250px;
+    width: calc(100% - 500px);
   }
 
   &__menu-item {

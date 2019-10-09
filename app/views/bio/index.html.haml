@@ -4,12 +4,14 @@
     %p.bio__text.bio__intro= t('bio.intro')
 .bio__row
   .bio__section-photo.bio__section-photo--first
-  .bio__intro-container.bio__container.bio__container--order-first
+  .bio__container.bio__container--order-first
     %p.bio__text= t('bio.projects')
 .bio__row
   .bio__section-photo.bio__section-photo--second
   %p.bio__photo-subtitle Entropia Ensemble
-  .bio__intro-container.bio__container
+  .bio__container
     %p.bio__text= t('bio.awards')
 .bio__row
   .bio__section-photo.bio__section-photo--third
+  .bio__container.bio__container--order-first
+    %p.bio__text= t('bio.style')
