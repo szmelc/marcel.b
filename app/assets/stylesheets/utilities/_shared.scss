@@ -1,5 +1,8 @@
 .main-wrap {
   width: 100%;
+  @media(min-width: $screen-md) {
+    margin-top: 106px;
+  }
 }
 
 .overlay {

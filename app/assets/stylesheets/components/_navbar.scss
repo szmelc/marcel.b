@@ -9,6 +9,13 @@ $bar-spacing: 18px;
   justify-content: flex-end;
   margin: 0 130px;
 
+  @media(min-width: $screen-md) {
+    margin: 0 0 0 130px;
+    width: calc(100% - 260px);
+    position: fixed;
+    top: 83px;
+  }
+
   @media(min-width: $screen-lg) {
     margin: 0 250px;
   }

@@ -1,7 +1,7 @@
 .nav.hidden-xs.hidden-sm.d-flex.justify-content-end
   .ul.nav__menu-items
     %li.nav__menu-item{ class: ("active" if controller_name == "bio") }
-      = link_to concerts_path do
+      = link_to bio_path do
         .nav__menu-item-container
           %span= t('navigation.bio')
     %li.nav__menu-item{ class: ("active" if controller_name == "concerts") }

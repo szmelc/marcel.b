@@ -1,0 +1,108 @@
+.bio {
+  @media(min-width: $screen-md) {
+    padding: 0 130px;
+  }
+
+  @media(min-width: $screen-lg) {
+    padding: 0 250px;
+  }
+
+  &__row {
+    margin: 0;
+    @media(min-width: $screen-md) {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__header-photo {
+    width: 100%;
+    @include cover-bg;
+    height: 600px;
+    background-image: url('bio/header.jpg');
+    @media(min-width: $screen-md) {
+      height: 400px;
+      width: 110%;
+      min-width: 370px;
+    }
+  }
+
+  &__section-photo {
+    width: 100%;
+    @include cover-bg;
+    height: 600px;
+    &--first {
+      background-image: url('bio/01_section_photo.jpg');
+    }
+    &--second {
+      background-image: url('bio/02_section_photo.jpg');
+    }
+    &--third {
+      background-image: url('bio/03_section_photo.jpg');
+    }
+
+    @media(min-width: $screen-md) {
+      height: auto;
+      width: 110%;
+    }
+  }
+
+  &__photo-subtitle {
+    font-style: italic;
+    text-align: center;
+    font-size: $fs-5;
+    margin-top: 15px;
+    margin-bottom: 0;
+    @media(min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__container {
+    padding: 0 8%;
+    margin: 110px 0;
+    &::last-child {
+      margin-top: 95px;
+    }
+    @media(min-width: $screen-md) {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      padding: 30px 5%;
+      width: 90%;
+    }
+
+    &--order-first {
+      order: -1
+    }
+
+    &--order-second {
+      order: 2
+    }
+  }
+
+  &__text {
+    font-size: $fs-5;
+    line-height: 60px;
+    @media(min-width: $screen-md) {
+      font-size: $fs-6;
+    }
+  }
+
+  p.bio__intro {
+    &::first-letter {
+      font-size: $fs-1;
+      float: left;
+      line-height: 60px;
+      padding-top: 5px;
+      padding-right: 8px;
+    }
+  }
+
+  &__intro {
+    &::first-letter {
+      initial-letter: 5;
+    }
+  }
+}

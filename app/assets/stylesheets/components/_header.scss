@@ -8,6 +8,10 @@
     margin-top: 0;
     margin-bottom: 15px;
     padding: 20px 130px 0 130px;
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    top: 0;
   }
   @media(min-width: $screen-lg) {
     padding: 20px 250px 0 250px;

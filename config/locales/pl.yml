@@ -1,4 +1,15 @@
 pl:
+  bio:
+    intro: "Marcel Baliński - pianista, kompozytor. Od dziecka kształcony \n
+            klasycznie. Absolwent Akademii Muzycznej w Krakowie oraz Akademii Muzycznej \n
+            w Łodzi w klasie fortepianu jazzowego."
+    projects: "Lider kwartetu Entropia Ensemble, z którym w 2018 roku wydał debiutancki album. \n
+              Członek zespołu Jerry & The Pelican System, z którym w maju 2019 roku wydał album w prestiżowej \n
+              serii Polish Jazz w wytwórni Warner Music Poland. Członek zespołu RASP Lovers, \n
+              którego debiutancki album ukaże się jesienią 2019 roku."
+    awards: "Dyrektor artystyczny oraz pomysłodawca Festiwalu Dwa Piętra w Łodzi. \n
+            Zdobywca nagrody Grand Prix podczas 10th Azoty Tarnów Jazz Contest w kategorii \n
+            zespołowej oraz solowej, II miejsce na Jazz Juniors, wyróżnienia Blue Note Poznań Jazz Competition."
   navigation:
     bio: "bio"
     concerts: "koncerty"

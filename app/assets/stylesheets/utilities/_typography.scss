@@ -1,5 +1,9 @@
 * {
-  font-family: "MontserratBold";
+  font-family: $primary-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $primary-font-bold;
 }
 
 a, a:hover, a:active, a:visited, a:focus {
