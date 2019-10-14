@@ -1,26 +1,7 @@
 .nav.hidden-xs.hidden-sm.d-flex.justify-content-end
   .ul.nav__menu-items
-    %li.nav__menu-item{ class: ("active" if controller_name == "bio") }
-      = link_to bio_path do
-        .nav__menu-item-container
-          %span= t('navigation.bio')
-    %li.nav__menu-item{ class: ("active" if controller_name == "concerts") }
-      = link_to concerts_path do
-        .nav__menu-item-container
-          %span= t('navigation.concerts')
-    %li.nav__menu-item{ class: ("active" if controller_name == "projects") }
-      = link_to projects_path do
-        .nav__menu-item-container
-          %span= t('navigation.projects')
-    %li.nav__menu-item{ class: ("active" if controller_name == "gallery") }
-      = link_to concerts_path do
-        .nav__menu-item-container
-          %span= t('navigation.gallery')
-    %li.nav__menu-item{ class: ("active" if controller_name == "press") }
-      = link_to concerts_path do
-        .nav__menu-item-container
-          %span= t('navigation.press')
-    %li.nav__menu-item{ class: ("active" if controller_name == "contact") }
-      = link_to concerts_path do
-        .nav__menu-item-container
-          %span= t('navigation.contact')
+    - %w(bio concerts projects gallery press contact).each do |page|
+      %li.nav__menu-item{ class: ("active" if controller_name == page) }
+        = link_to page, controller: page, action: "index" do
+          .nav__menu-item-container
+            %span= t("navigation.#{page}")

@@ -1,4 +1,4 @@
-.mobile-nav.navbar-fixed-top.visible-xs.visible-sm
+.mobile-nav
   .mobile-nav__burger-wrapper
     .mobile-nav__hamburger-menu
   .mobile-nav__language-picker
@@ -9,3 +9,9 @@
       = link_to(options = { locale: "pl" }) do
         %span.mobile-nav__language.mobile-nav__language--pl PL
 .mobile-nav__slider
+  %ul.mobile-nav__menu-items
+    - %w(bio concerts projects gallery press contact).each do |page|
+      %li.mobile-nav__menu-item{ class: ("active" if controller_name == page) }
+        = link_to page, controller: page, action: "index" do
+          .mobile-nav__menu-item-container
+            %span= t("navigation.#{page}")
