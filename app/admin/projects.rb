@@ -8,10 +8,6 @@ ActiveAdmin.register Project do
     actions
   end
 
-  filter :date
-  filter :city
-  filter :venue
-
   show do |project|
     attributes_table do
       row :name

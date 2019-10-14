@@ -45,6 +45,9 @@ en:
            Jest aktywny na polskiej i międzynarodowej scenie muzycznej, współpracował m.in. \n
            z: Zbigniew Namysłowski Quintet, Aga Zaryan, Wojtek Mazolewski Quintet, Elektro Camerata Varsoviensis.\n
            Kompozytor muzyki filmowej oraz do spektakli teatralnych."
+  projects:
+    albums: "Albums"
+    buy_album: "Buy Album"
   navigation:
     bio: "bio"
     concerts: "concerts"

@@ -4,5 +4,5 @@ class Project < ApplicationRecord
   mount_uploaders :photos, PhotosUploader
   validates_presence_of :name
 
-  translates :description
+  has_many :albums
 end

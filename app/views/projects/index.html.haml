@@ -1,0 +1,4 @@
+.projects__projects-wrapper.col-xs-12
+  - projects.each do |project|
+    .projects__row
+      = render "project", project: project

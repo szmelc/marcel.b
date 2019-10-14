@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_13_195545) do
+ActiveRecord::Schema.define(version: 2019_10_14_123301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,11 @@ ActiveRecord::Schema.define(version: 2019_10_13_195545) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "year", null: false
+    t.string "cover"
+    t.text "description"
+    t.string "buy_cd_link"
+    t.string "stream_link"
     t.index ["project_id"], name: "index_albums_on_project_id"
   end
 

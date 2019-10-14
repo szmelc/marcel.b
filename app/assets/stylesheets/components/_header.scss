@@ -5,6 +5,7 @@
   margin: 50px 0;
 
   @media(min-width: $screen-md) {
+    z-index: 20;
     margin-top: 0;
     margin-bottom: 15px;
     padding: 20px 130px 0 130px;

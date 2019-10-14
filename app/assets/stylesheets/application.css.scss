@@ -3,8 +3,11 @@
 
 @import "bootstrap-sprockets";
 @import 'bootstrap';
-
 @import 'framework/components';
+
+// 3rd party stylesheets
+@import 'slick';
+@import 'slick-theme';
 
 // Mixins
 @import "mixins/background-mixins";
@@ -27,6 +30,7 @@
 // Pages
 @import "pages/bio";
 @import "pages/homepage";
+@import "pages/projects";
 
 @import 'utilities/shared';
 @import 'utilities/typography';

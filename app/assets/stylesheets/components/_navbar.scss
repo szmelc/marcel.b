@@ -11,6 +11,7 @@ $bar-spacing: 18px;
 
   @media(min-width: $screen-md) {
     margin: 0 0 0 130px;
+    z-index: 20;
     width: calc(100% - 260px);
     position: fixed;
     top: 83px;

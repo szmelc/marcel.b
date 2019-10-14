@@ -1,0 +1,5 @@
+.projects__albums-header-container.col-xs-12
+  %h2.projects__project-albums-header= t('projects.albums')
+.projects__albums-wrapper.col-xs-12
+  - project.albums.order('year desc').each do |album|
+    = render 'album', album: album, project: project
