@@ -1,0 +1,9 @@
+.concerts {
+  @media(min-width: $screen-md) {
+    padding: 0 130px;
+  }
+
+  @media(min-width: $screen-lg) {
+    padding: 0 250px;
+  }
+}
