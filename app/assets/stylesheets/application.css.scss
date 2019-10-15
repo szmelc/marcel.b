@@ -6,8 +6,10 @@
 @import 'framework/components';
 
 // 3rd party stylesheets
+
 @import 'slick';
 @import 'slick-theme';
+@import 'lightbox';
 
 // Mixins
 @import "mixins/background-mixins";
@@ -30,6 +32,7 @@
 // Pages
 @import "pages/bio";
 @import "pages/homepage";
+@import "pages/gallery";
 @import "pages/projects";
 
 @import 'utilities/shared';

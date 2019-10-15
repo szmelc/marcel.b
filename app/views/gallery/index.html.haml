@@ -1,0 +1,5 @@
+.gallery__photos-wrapper
+  - photos.each do |photo|
+    = link_to photo.picture.url, { data: { lightbox: 'lightbox' }, class: "gallery__photo-link" } do
+      %div.gallery__photo-container
+        = image_tag photo.picture.url(:small), class: "gallery__photo"
