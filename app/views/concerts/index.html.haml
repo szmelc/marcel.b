@@ -1,1 +1,8 @@
-%h1= t('homepage.all_concerts')
+.concerts__years-slider-container.col-xs-12
+  - past_concerts_years.each do |year|
+    = link_to year, fetch_concerts_path(year: year), class: "concerts__year-link", remote: true
+  = link_to current_year, fetch_concerts_path(year: current_year), class: "concerts__year-link active", remote: true
+  - future_concerts_years.each do |year|
+    = link_to year, fetch_concerts_path(year: year), class: "concerts__year-link", remote: true
+.concerts__concerts-list-wrapper.col-xs-12
+  = render 'concerts', concerts: concerts

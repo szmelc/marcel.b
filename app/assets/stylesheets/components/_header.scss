@@ -1,8 +1,7 @@
 .header {
-  padding: 0 20px;
+  padding: 30px 20px 0 20px;
   text-transform: uppercase;
-  padding-top: 80px;
-  margin: 50px 0;
+  margin: 80px 0 50px 0;
 
   @media(min-width: $screen-md) {
     z-index: 20;

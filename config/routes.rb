@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     get '/press', to: 'press#index'
     get '/projects', to: 'projects#index'
   end
+
+  get '/fetch_concerts/:year', to: 'concerts#fetch_concerts', as: 'fetch_concerts'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 end

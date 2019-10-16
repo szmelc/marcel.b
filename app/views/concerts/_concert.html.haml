@@ -1,0 +1,13 @@
+.concerts__concert
+  .concerts__concert-date-container
+    .span.concerts__concert-date.concerts__concert-date--day= concert.day
+    %hr.concerts__concert-date-separator
+    .span.concerts__concert-date.concerts__concert-date--year= concert.year
+  .concerts__concert-details
+    .concerts__concert-name-container
+      %h2.concerts__concert-name= concert.name
+    .concerts__concert-location-details
+      .concerts__concert-location.concerts__concert-location--city
+        %span.concerts__concert-city= concert.city
+      .concerts__concert-location.concerts__concert-location--venue
+        %span.concerts__concert-venue= concert.venue

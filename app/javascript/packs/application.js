@@ -14,6 +14,7 @@ require("@rails/activestorage").start()
 require("jquery")
 require("plugins/slick.min")
 require("plugins/lightbox.min")
+require("components/concerts-years-slider")
 require("components/hamburger-menu")
 require("components/project-photos-carousel")
 

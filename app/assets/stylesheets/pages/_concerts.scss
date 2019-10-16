@@ -1,9 +1,149 @@
 .concerts {
+  flex: 1;
   @media(min-width: $screen-md) {
     padding: 0 130px;
   }
 
   @media(min-width: $screen-lg) {
     padding: 0 250px;
+  }
+
+  &__years-slider-container {
+    overflow-x: scroll;
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    background: $green;
+    padding: 20px 0;
+  }
+
+  &__year-link {
+    color: $white;
+    margin-right: 30%;
+    font-size: $fs-1;
+    position: relative;
+    &:focus,
+    &:active {
+      color: $orange;
+    }
+  }
+
+  &__concerts-list-wrapper {
+    min-height: 100%;
+    @include cover-bg;
+    background-image: url('mobile_concerts_bg.svg');
+  }
+
+  &__concert {
+    display: flex;
+    margin: 30px auto;
+  }
+
+  &__concert-date-container {
+    background: $beige;
+    width: 125px;
+    height: 125px;
+    border: 6px solid $black;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media(min-width: $screen-md) {
+      border: 4px solid $black;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__concert-date-separator {
+    width: 35%;
+    margin: 3px auto;
+    border-color: $black;
+  }
+
+  &__concert-details {
+    display: flex;
+    background: $white;
+    height: 125px;
+    width: 100%;
+    border: 6px solid $black;
+    padding-left: 20px;
+    @media(min-width: $screen-md) {
+      border: 4px solid $black;
+      padding-left: 15px;
+      width: 60%;
+      min-width: 385px;
+      max-width: 640px;
+      height: 80px;
+    }
+    @media(min-width: $screen-lg) {
+      padding-left: 30px;
+    }
+  }
+
+  &__concert-name-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__concert-name {
+    @media(min-width: $screen-md) {
+      font-size: $fs-7;
+    }
+  }
+
+  &__concert-location-details {
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid $black;
+    width: 30%;
+    height: 100%;
+    @media(min-width: $screen-md) {
+      margin-left: 25px;
+      width: 35%;
+    }
+  }
+
+  &__concert-location {
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 62.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media(min-width: $screen-md) {
+      line-height: 40px;
+    }
+    &--city {
+      border-bottom: 3px solid $black
+    }
+    &--location {
+      border-top: 3px solid $black
+    }
+  }
+
+  &__concert-city,
+  &__concert-venue {
+    font-size: $fs-6;
+    text-align: center;
+    margin: auto;
+    display: block;
+    @media(min-width: $screen-md) {
+      font-size: $fs-9;
+    }
+  }
+
+  &__concert-date {
+    text-align: center;
+    display: block;
+    font-size: $fs-5;
+    @media(min-width: $screen-md) {
+      font-size: $fs-7;
+    }
   }
 }
