@@ -8,6 +8,9 @@
   .projects__project-description-container.col-xs-12{class: (project.photos.any? ? "col-md-7" : "col-md-12")}
     .projects__project-header-container-desktop.hidden-xs.hidden-sm
       %h1.projects__project-header.hidden-xs.hidden-sm= project.name
-    %p.projects__project-description= project.description
+    - if current_page?(locale: :pl) || I18n.locale == :pl
+      %p.projects__project-description= project.description
+    - elsif current_page?(locale: :en)
+      %p.projects__project-description= project.english_description
   - if project.albums.any?
     = render 'project_albums', project: project

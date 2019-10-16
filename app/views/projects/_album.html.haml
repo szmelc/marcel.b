@@ -6,7 +6,10 @@
     %h2.projects__album-title= album.name
     %h4.projects__album-year= "(#{album.year})"
     .projects__album-description-container.col-xs-12
-      %span.projects__album-description= simple_format(album.description)
+      - if current_page?(locale: :pl) || I18n.locale == :pl
+        %span.projects__album-description= simple_format(album.description)
+      - elsif current_page?(locale: :en)
+        %span.projects__album-description= simple_format(album.english_description)
     - if album.buy_cd_link.present?
       = button_tag t('projects.buy_album'), type: 'button', class: "button button__buy-album", onclick: "location.href = '#{album.buy_cd_link}'"
   - if project.albums.size > 1

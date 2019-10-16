@@ -1,6 +1,6 @@
 ActiveAdmin.register Album do
   permit_params :buy_cd_link, :cover, :description, :name, :project_id,
-                :stream_link, :year
+                :stream_link, :year, :english_description
 
   index do
     selectable_column
@@ -15,6 +15,7 @@ ActiveAdmin.register Album do
     f.inputs do
       f.input :name
       f.input :description
+      f.input :english_description
       f.input :buy_cd_link
       f.input :stream_link
       f.input :year
