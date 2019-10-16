@@ -1,18 +1,20 @@
 .homepage {
   @include contain-bg;
-  background-image: url('homepage_bg.svg');
+  // background-image: url('homepage_bg.svg');
   min-height: 85vh;
 
-  @media(min-width: $screen-md) {
-    background-position: right;
+  @media(min-width: $screen-md) {;
+    background-image: url('desktop_concerts_bg.svg');
+    @include cover-bg;
+    background-attachment: fixed;
+    background-position: 0px 0px;
     display: flex;
-    margin-left: 130px;
-    max-height: calc(100vh - 121px);
-    min-height: calc(100vh - 121px);
+    padding: 0 130px;
+    min-height: 100%;
   }
 
   @media(min-width: $screen-lg) {
-    margin-left: 250px;
+    padding: 0 250px
   }
 
   &__picture {
@@ -26,6 +28,15 @@
       @include cover-bg;
       height: auto;
       width: 70%;
+    }
+  }
+
+  &__social-icons {
+    display: none;
+    padding-right: 75px;
+    @media(min-width: $screen-md) {
+      display: inline-block;
+      margin-top: 20px;
     }
   }
 
@@ -58,6 +69,19 @@
         background-image: url('music_socials_icons/#{$provider}_logo.svg')
       }
     }
+
+    @media(min-width: $screen-md) {
+      height: 90px;
+      width: 90px;
+      margin: 25px auto;
+      transition: 0.15s;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:hover {
+        background-color: $orange;
+      }
+    }
   }
 
   &__concerts-wrapper {
@@ -66,7 +90,7 @@
     width: 100%;
     transform: translate(0, -70px);
     @media(min-width: $screen-md) {
-      transform: translate(-75px, 0px);
+      transform: translate(-50px, 0px);
       padding: 0;
     }
   }
@@ -108,7 +132,7 @@
     @media(min-width: $screen-md) {
       border: 4px solid $black;
       padding-left: 15px;
-      width: 60%;
+      width: 80%;
       min-width: 385px;
       max-width: 640px;
       height: 80px;

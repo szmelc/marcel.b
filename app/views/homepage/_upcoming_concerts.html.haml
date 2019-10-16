@@ -2,3 +2,10 @@
   - concerts.each do |concert|
     = render 'concert', concert: concert
   = button_tag t('homepage.all_concerts'), type: 'button', class: "button button__desktop-button homepage__button homepage__button--more-concerts", onclick: "location.href = '#{concerts_path}'"
+.homepage__social-icons
+  = link_to 'spotify:artist:7m6aeZvZbUT5Gt2kBZ0bNt' do
+    .homepage__mobile-music-link.homepage__mobile-music-link--spotify
+  = link_to 'https://soundcloud.com/user-32343881-493664261', target: '_blank' do
+    .homepage__mobile-music-link.homepage__mobile-music-link--soundcloud
+  = link_to 'https://www.youtube.com/watch?v=KQuEJj4XDpk', target: '_blank' do
+    .homepage__mobile-music-link.homepage__mobile-music-link--youtube
