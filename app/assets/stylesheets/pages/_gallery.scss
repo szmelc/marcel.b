@@ -1,6 +1,6 @@
 .gallery {
   @media(min-width: $screen-md) {
-    background-image: url('desktop_concerts_bg.svg');
+    background-image: image-url('desktop_concerts_bg.svg');
     @include cover-bg;
     background-position: 0px 0px;
     background-attachment: fixed;

@@ -1,5 +1,5 @@
 module ProjectsHelper
   def project_photo_style(photo)
-    "background-image: url(#{photo.url})"
+    "background-image: image-url(#{photo.url})"
   end
 end

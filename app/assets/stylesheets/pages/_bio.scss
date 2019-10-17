@@ -20,7 +20,7 @@
     width: 100%;
     @include cover-bg;
     height: 600px;
-    background-image: url('bio/header.jpg');
+    background-image: image-url('bio/header.jpg');
     @media(min-width: $screen-md) {
       height: 400px;
       width: 110%;
@@ -33,13 +33,13 @@
     @include cover-bg;
     height: 600px;
     &--first {
-      background-image: url('bio/01_section_photo.jpg');
+      background-image: image-url('bio/01_section_photo.jpg');
     }
     &--second {
-      background-image: url('bio/02_section_photo.jpg');
+      background-image: image-url('bio/02_section_photo.jpg');
     }
     &--third {
-      background-image: url('bio/03_section_photo.jpg');
+      background-image: image-url('bio/03_section_photo.jpg');
     }
 
     @media(min-width: $screen-md) {
