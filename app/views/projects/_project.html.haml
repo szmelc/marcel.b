@@ -12,5 +12,6 @@
       %p.projects__project-description= project.description
     - elsif current_page?(locale: :en)
       %p.projects__project-description= project.english_description
+    = render 'project_socials', project: project
   - if project.albums.any?
     = render 'project_albums', project: project
