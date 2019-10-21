@@ -1,11 +1,11 @@
 .projects__project-wrapper.col-xs-12
   .projects__project-header-container.col-xs-12.col-md-6
     %h1.projects__project-header= project.name
-  - if project.photos.any?
+  - if project.project_photos.any?
     .projects__project-photos-container.col-xs-12.col-md-5
-      - project.photos.each do |photo|
+      - project.project_photos.each do |photo|
         .projects__photo-container{ style: project_photo_style(photo) }
-  .projects__project-description-container.col-xs-12{class: (project.photos.any? ? "col-md-7" : "col-md-12")}
+  .projects__project-description-container.col-xs-12{ class: (project.project_photos.any? ? "col-md-7" : "col-md-12") }
     .projects__project-header-container-desktop.hidden-xs.hidden-sm
       %h1.projects__project-header.hidden-xs.hidden-sm= project.name
     - if current_page?(locale: :pl) || I18n.locale == :pl

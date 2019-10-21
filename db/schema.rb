@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_16_201230) do
+ActiveRecord::Schema.define(version: 2019_10_21_110731) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -78,6 +78,14 @@ ActiveRecord::Schema.define(version: 2019_10_16_201230) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "project_photos", force: :cascade do |t|
+    t.string "picture"
+    t.bigint "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["project_id"], name: "index_project_photos_on_project_id"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -92,4 +100,5 @@ ActiveRecord::Schema.define(version: 2019_10_16_201230) do
   end
 
   add_foreign_key "albums", "projects"
+  add_foreign_key "project_photos", "projects"
 end

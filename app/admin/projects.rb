@@ -1,5 +1,5 @@
 ActiveAdmin.register Project do
-  permit_params :name, :description, :english_description, { photos: [] }, :order
+  permit_params :name, :description, :english_description, :order
 
   index do
     selectable_column
@@ -13,15 +13,6 @@ ActiveAdmin.register Project do
       row :name
       row :description
       row :english_description
-      row "Images" do
-        ul do
-         project.photos.each do |photo|
-           li do
-             image_tag(photo.url(:small))
-           end
-         end
-       end
-     end
     end
   end
 
@@ -31,7 +22,6 @@ ActiveAdmin.register Project do
       f.input :description
       f.input :english_description
       f.input :order
-      f.file_field :photos, multiple: true
     end
     f.actions
   end
