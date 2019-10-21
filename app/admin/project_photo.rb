@@ -4,6 +4,7 @@ ActiveAdmin.register ProjectPhoto do
   index do
     selectable_column
     id_column
+    column :project
     column :picture
     actions
   end
