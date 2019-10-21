@@ -4,7 +4,7 @@ $bar-spacing: 18px;
 
 .nav {
   background: $green;
-  height: 23px;
+  height: 26px;
   display: flex;
   justify-content: flex-end;
   margin: 0 130px;
@@ -17,7 +17,7 @@ $bar-spacing: 18px;
     z-index: 20;
     width: calc(100% - 260px);
     position: fixed;
-    top: 83px;
+    top: 86px;
   }
 
   @media(min-width: $screen-lg) {
@@ -29,7 +29,7 @@ $bar-spacing: 18px;
     display: inline-block;
     height: 100%;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 1em;
     &.active {
       background: $orange;
       span {
@@ -75,7 +75,7 @@ $bar-spacing: 18px;
     top: 78px;
     background: $orange;
     position: absolute;
-    z-index: 5;
+    z-index: 15;
     opacity: 0;
     transition-property: opacity;
     // transition-duration: 0.2s;

@@ -23,6 +23,7 @@
     align-content: center;
     padding: 10px 0;
     margin-bottom: 30px;
+    padding: 20px 0;
     @media(min-width: $screen-md) {
       display: none;
     }
@@ -101,7 +102,7 @@
     line-height: 2em;
     font-size: $fs-4;
     @media(min-width: $screen-md) {
-      font-size: $fs-7;
+      font-size: $fs-6;
     }
   }
 

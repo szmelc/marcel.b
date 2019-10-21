@@ -10,5 +10,5 @@
   = link_to current_year, fetch_concerts_path(year: current_year), class: "concerts__year-link active", remote: true
   - past_concerts_years.reverse.each do |year|
     = link_to year, fetch_concerts_path(year: year), class: "concerts__year-link", remote: true
-.concerts__concerts-list-wrapper.col-xs-12.col-md-6.col-md-offset-1
+.concerts__concerts-list-wrapper.col-xs-12.col-md-7.col-md-offset-1
   = render 'concerts', concerts: concerts

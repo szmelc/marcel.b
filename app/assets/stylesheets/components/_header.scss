@@ -5,9 +5,8 @@
 
   @media(min-width: $screen-md) {
     z-index: 20;
-    margin-top: 0;
-    margin-bottom: 15px;
-    padding: 20px 130px 0 130px;
+    margin: 0;
+    padding: 20px 130px 10px 130px;
     position: fixed;
     width: 100%;
     background-color: $white;

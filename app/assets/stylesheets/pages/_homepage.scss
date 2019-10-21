@@ -27,13 +27,12 @@
       height: 100vh;
       @include cover-bg;
       height: auto;
-      width: 70%;
+      width: 90%;
     }
   }
 
   &__social-icons {
     display: none;
-    padding-right: 75px;
     @media(min-width: $screen-md) {
       display: inline-block;
       margin-top: 20px;
@@ -51,6 +50,31 @@
     cursor: pointer;
     @media(min-width: $screen-md) {
       display: none;
+    }
+  }
+
+  &__picture-social-icons-container {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  &__picture-social-icon {
+    background-color: $grey;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    &:first-child {
+      margin-bottom: 15px;
+    }
+
+    &--instagram {
+      background-image: image-url('icons/instagram_icon.svg')
+    }
+    &--facebook {
+      background-image: image-url('icons/facebook_icon.svg')
     }
   }
 
@@ -132,7 +156,7 @@
     @media(min-width: $screen-md) {
       border: 4px solid $black;
       padding-left: 15px;
-      width: 80%;
+      width: 90%;
       min-width: 385px;
       max-width: 640px;
       height: 80px;
