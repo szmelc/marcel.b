@@ -1,10 +1,9 @@
 .bio {
   @media(min-width: $screen-md) {
-    padding: 0 130px;
-  }
-
-  @media(min-width: $screen-lg) {
-    padding: 0 250px;
+    background-image: none;
+    max-height: 89vh;
+    overflow: scroll;
+    // background-color: $white;
   }
 
   &__row {

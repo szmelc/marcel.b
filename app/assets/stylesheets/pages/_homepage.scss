@@ -1,20 +1,9 @@
 .homepage {
-  @include contain-bg;
-  // background-image: url('homepage_bg.svg');
   min-height: 85vh;
 
   @media(min-width: $screen-md) {;
-    background-image: image-url('desktop_concerts_bg.svg');
-    @include cover-bg;
-    background-attachment: fixed;
-    background-position: 0px 0px;
     display: flex;
-    padding: 0 130px;
     min-height: 100%;
-  }
-
-  @media(min-width: $screen-lg) {
-    padding: 0 250px
   }
 
   &__picture {

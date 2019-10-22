@@ -18,8 +18,9 @@
   }
 
   &__buy-album {
+    background-color: $orange;
     display: block;
-    margin: auto;
+    margin: 0 auto 20px;
     font-size: $fs-4;
     text-transform: uppercase;
     @media(min-width: $screen-md) {

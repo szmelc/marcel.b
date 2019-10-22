@@ -8,7 +8,6 @@ gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0.0'
 
 gem 'activeadmin'
-# gem 'activeadmin-globalize', '~> 1.0.0.pre'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bourbon'
 gem 'carrierwave', '~> 2.0'

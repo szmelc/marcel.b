@@ -1,14 +1,5 @@
 .press {
   @media(min-width: $screen-md) {
-    padding: 0 130px;
     min-height: 100%;
-    background-image: url('desktop_concerts_bg.svg');
-    @include cover-bg;
-    background-attachment: fixed;
-    background-position: 0px 0px;
-  }
-
-  @media(min-width: $screen-lg) {
-    padding: 0 250px;
   }
 }

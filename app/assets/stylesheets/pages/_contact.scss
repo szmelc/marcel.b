@@ -1,18 +1,7 @@
 .contact {
-  background-image: image-url('mobile_concerts_bg.svg');
-  @include cover-bg;
-
   @media(min-width: $screen-md) {
     min-height: 100%;
-    background-image: image-url('desktop_concerts_bg.svg');
-    @include cover-bg;
-    background-attachment: fixed;
-    background-position: 0px 0px;
-    padding: 0 130px;
-  }
-
-  @media(min-width: $screen-lg) {
-    padding: 0 250px;
+    background: none;
   }
 
   &__mail-container {
