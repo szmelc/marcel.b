@@ -1,5 +1,5 @@
 ActiveAdmin.register Concert do
-  permit_params :city, :country, :details, :festival_name, :date, :name, :venue
+  permit_params :city, :country, :details, :festival_name, :date, :name, :venue, :link
 
   index do
     selectable_column
@@ -23,6 +23,7 @@ ActiveAdmin.register Concert do
       f.input :date
       f.input :country
       f.input :festival_name
+      f.input :link
       f.input :venue
       f.input :details
     end

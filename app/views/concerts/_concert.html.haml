@@ -3,11 +3,16 @@
     .span.concerts__concert-date.concerts__concert-date--day= concert.day
     %hr.concerts__concert-date-separator
     .span.concerts__concert-date.concerts__concert-date--year= concert.year
-  .concerts__concert-details
-    .concerts__concert-name-container
-      %h2.concerts__concert-name= concert.name
-    .concerts__concert-location-details
-      .concerts__concert-location.concerts__concert-location--city
-        %span.concerts__concert-city= concert.city
-      .concerts__concert-location.concerts__concert-location--venue
-        %span.concerts__concert-venue= concert.venue
+  .concerts__concert-details-container
+    .concerts__concert-details
+      .concerts__concert-name-container
+        %h2.concerts__concert-name= concert.name
+      .concerts__concert-location-details
+        %span.concerts__concert-city
+          = concert.location
+    .concerts__concert-extras
+      %span.concerts__concert-festival= concert.festival_name
+      %span.concerts__concert-description= concert.details
+    - if concert.link.present?
+      = link_to concert.link, class: "concerts__concert-link-container", target: "_blank" do
+        .concerts__concert-link

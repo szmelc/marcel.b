@@ -8,4 +8,8 @@ class ConcertDecorator < Draper::Decorator
   def year
     object.date.strftime("%Y")
   end
+
+  def location
+    "#{object.city}, #{object.venue}"
+  end
 end

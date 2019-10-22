@@ -3,11 +3,10 @@
     %span.homepage__concert-date.homepage__concert-date--day= concert.day
     %hr.homepage__concert-date-divider
     %span.homepage__concert-date.homepage__concert-date--year= concert.year
-  .homepage__concert-details
-    .homepage__concert-name-container
+  .homepage__concert-details-container
+    .homepage__concert-details
       %h2.homepage__concert-name= concert.name
-    .homepage__concert-location-details
-      .homepage__concert-location.homepage__concert-location--city
-        %span.homepage__concert-city= concert.city
-      .homepage__concert-location.homepage__concert-location--venue
-        %span.homepage__concert-venue= concert.venue
+      %span.homepage__concert-city= concert.location
+    .homepage__concert-extras
+      %span.homepage__concert-festival= concert.festival_name
+      %span.homepage__concert-description= concert.details
