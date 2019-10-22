@@ -8,5 +8,7 @@
       %h2.homepage__concert-name= concert.name
       %span.homepage__concert-city= concert.location
     .homepage__concert-extras
-      %span.homepage__concert-festival= concert.festival_name
+      - if concert.festival_name.present?
+        %span.homepage__concert-festival= concert.festival_name
+      - if concert.details.present?
       %span.homepage__concert-description= concert.details

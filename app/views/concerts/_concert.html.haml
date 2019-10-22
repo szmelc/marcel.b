@@ -11,8 +11,10 @@
         %span.concerts__concert-city
           = concert.location
     .concerts__concert-extras
-      %span.concerts__concert-festival= concert.festival_name
-      %span.concerts__concert-description= concert.details
+      - if concert.festival_name.present?
+        %span.concerts__concert-festival= concert.festival_name
+      - if concert.details.present?
+        %span.concerts__concert-description= concert.details
     - if concert.link.present?
       = link_to concert.link, class: "concerts__concert-link-container", target: "_blank" do
         .concerts__concert-link
