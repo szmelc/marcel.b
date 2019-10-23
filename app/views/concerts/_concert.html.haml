@@ -7,6 +7,9 @@
     .concerts__concert-details
       .concerts__concert-name-container
         %h2.concerts__concert-name= concert.name
+        - if concert.link.present?
+          = link_to concert.link, class: "concerts__concert-link-container concerts__concert-link-container--mobile", target: "_blank" do
+            .concerts__concert-link
       .concerts__concert-location-details
         %span.concerts__concert-city
           = concert.location
@@ -16,5 +19,5 @@
       - if concert.details.present?
         %span.concerts__concert-description= concert.details
     - if concert.link.present?
-      = link_to concert.link, class: "concerts__concert-link-container", target: "_blank" do
+      = link_to concert.link, class: "concerts__concert-link-container concerts__concert-link-container--desktop", target: "_blank" do
         .concerts__concert-link

@@ -5,10 +5,17 @@
     %span.homepage__concert-date.homepage__concert-date--year= concert.year
   .homepage__concert-details-container
     .homepage__concert-details
-      %h2.homepage__concert-name= concert.name
+      .concerts__concert-name-container
+        %h2.homepage__concert-name= concert.name
+        - if concert.link.present?
+          = link_to concert.link, class: "homepage__concert-link-container homepage__concert-link-container--mobile", target: "_blank" do
+            .homepage__concert-link
       %span.homepage__concert-city= concert.location
     .homepage__concert-extras
       - if concert.festival_name.present?
         %span.homepage__concert-festival= concert.festival_name
       - if concert.details.present?
         %span.homepage__concert-description= concert.details
+    - if concert.link.present?
+      = link_to concert.link, class: "homepage__concert-link-container homepage__concert-link-container--desktop", target: "_blank" do
+        .homepage__concert-link

@@ -32,6 +32,7 @@ public/uploads
 yarn-debug.log*
 .yarn-integrity
 
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
