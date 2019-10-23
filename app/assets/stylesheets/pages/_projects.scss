@@ -20,6 +20,10 @@
 
   &__projects-wrapper {
     padding: 0;
+    @media(min-width: $screen-md) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
   }
 
   &__project-wrapper {
@@ -42,6 +46,10 @@
     @media(min-width: $screen-md) {
       display: none;
     }
+  }
+
+  &__albums-wrapper {
+    padding: 0;
   }
 
   &__project-header {
@@ -136,7 +144,10 @@
   }
 
   &__album-container {
+    padding: 0;
     @media(min-width: $screen-md) {
+      padding-right: 15px;
+      padding-left: 15px;
       margin: 60px 0;
     }
   }
@@ -167,9 +178,16 @@
     }
   }
 
+  &__album-details {
+    padding: 0;
+    @media(min-width: $screen-md) {
+      padding: 0 15px;
+    }
+  }
+
   &__project-description-container {
     @media(min-width: $screen-md) {
-      padding: 35px;
+      padding: 15px 35px 35px 35px;
       background: $white;
       -webkit-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
       -moz-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);

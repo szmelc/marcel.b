@@ -2,15 +2,16 @@
   - if album.cover.url.present?
     .projects__album-cover-container.col-md-4.col-md-offset-1
       = image_tag album.cover.url, class: "projects__album-cover"
-  .projects__album-details-container.col-md-7
-    %h2.projects__album-title= album.name
-    %h4.projects__album-year= "(#{album.year})"
-    .projects__album-description-container.col-xs-12
-      - if current_page?(locale: :pl) || I18n.locale == :pl
-        %span.projects__album-description= simple_format(album.description)
-      - elsif current_page?(locale: :en)
-        %span.projects__album-description= simple_format(album.english_description)
-    - if album.buy_cd_link.present?
-      = button_tag t('projects.buy_album'), type: 'button', class: "button button__buy-album", onclick: "location.href = '#{album.buy_cd_link}'"
-  - if project.albums.size > 1
-    %hr.projects__albums-separator.visible-xs.visible-sm/
+  .projects__album-details.col-md-7
+    .projects__album-details-container.col-md-12.col-xs-12
+      %h2.projects__album-title= album.name
+      %h4.projects__album-year= "(#{album.year})"
+      .projects__album-description-container
+        - if current_page?(locale: :pl) || I18n.locale == :pl
+          %span.projects__album-description= simple_format(album.description)
+        - elsif current_page?(locale: :en)
+          %span.projects__album-description= simple_format(album.english_description)
+      - if album.buy_cd_link.present?
+        = button_tag t('projects.buy_album'), type: 'button', class: "button button__buy-album", onclick: "location.href = '#{album.buy_cd_link}'"
+    - if project.albums.size > 1
+      %hr.projects__albums-separator.visible-xs.visible-sm/
