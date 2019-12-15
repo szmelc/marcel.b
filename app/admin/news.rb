@@ -13,8 +13,12 @@ ActiveAdmin.register News do
       attributes_table do
         row :polish_title
         row :english_title
-        row :polish_content
-        row :english_content
+        row :polish_content do |o|
+          o.polish_content.body
+        end
+        row :english_content do |o|
+          o.english_content.body
+        end
       end
     end
   
@@ -22,8 +26,8 @@ ActiveAdmin.register News do
       f.inputs do
         f.input :polish_title
         f.input :english_title
-        f.input :english_content
-        f.input :polish_content
+        f.input :english_content, as: :quill_editor
+        f.input :polish_content, as: :quill_editor
       end
       f.actions
     end

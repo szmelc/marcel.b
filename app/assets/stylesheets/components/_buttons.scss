@@ -17,6 +17,15 @@
     background-color: $orange;
   }
 
+  &--past-concerts {
+    display: none;
+    @media(min-width: $screen-md) {
+      display: inline-block;
+      align-self: center;
+      background-color: $orange;
+    }
+  }
+
   &__read-more {
     padding: 12px 18px;
     margin-top: 10px;

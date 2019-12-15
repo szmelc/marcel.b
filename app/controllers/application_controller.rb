@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  helper ActionText::Engine.helpers
   protect_from_forgery with: :exception
   before_action :set_locale, :navbar_projects
 

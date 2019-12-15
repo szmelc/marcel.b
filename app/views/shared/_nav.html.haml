@@ -1,32 +1,33 @@
 .nav.hidden-xs.hidden-sm.d-flex.justify-content-end
   .ul.nav__menu-items
     %li.nav__menu-item{ class: ("active" if controller_name == 'news') }
-      = link_to 'news', controller: 'news', action: "index" do
+      = link_to controller: 'news', action: "index" do
         .nav__menu-item-container
           %span= t("navigation.news")  
     %li.nav__menu-item{ class: ("active" if controller_name == 'bio') }
-      = link_to 'bio', controller: 'bio', action: "index" do
+      = link_to controller: 'bio', action: "index" do
         .nav__menu-item-container
           %span= t("navigation.bio")
     %li.nav__menu-item{ class: ("active" if controller_name == 'concerts') }
-      = link_to 'concerts', controller: 'concerts', action: "index" do
+      = link_to controller: 'concerts', action: "index" do
         .nav__menu-item-container
           %span= t("navigation.concerts")
     %li.nav__menu-item{ class: [("active" if controller_name == 'projects'), "dropdown"] }
-      .nav__menu-item-container
-        %span.nav__menu-link= t("navigation.projects")           
+      = link_to controller: 'projects', action: "index" do
+        .nav__menu-item-container
+          %span.nav__menu-link= t("navigation.projects")           
       .dropdown-content
         - @navbar_projects.each do |project|
           = link_to project.name, projects_path(anchor: project.name.parameterize.underscore), class: "nav__dropdown-project-link"
     %li.nav__menu-item{ class: ("active" if controller_name == 'gallery') }
-      = link_to 'gallery', controller: 'gallery', action: "index" do
+      = link_to controller: 'gallery', action: "index" do
         .nav__menu-item-container
           %span= t("navigation.gallery")                   
     %li.nav__menu-item{ class: ("active" if controller_name == "media") }
-      = link_to "media", controller: "media", action: "index" do
+      = link_to controller: "media", action: "index" do
         .nav__menu-item-container
           %span= t("navigation.media")
     %li.nav__menu-item{ class: ("active" if controller_name == 'contact') }
-      = link_to 'contact', controller: 'contact', action: "index" do
+      = link_to controller: 'contact', action: "index" do
         .nav__menu-item-container
           %span= t("navigation.contact")   

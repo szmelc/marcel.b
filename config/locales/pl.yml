@@ -32,4 +32,6 @@ pl:
   news:
     read_more: "Czytaj dalej..."
   homepage:
+    no_concerts: "Brak nadchodzących koncertów..."
     all_concerts: "Wszystkie koncerty"
+    past_concerts: "Przeszłe koncerty"

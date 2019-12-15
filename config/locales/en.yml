@@ -63,4 +63,6 @@ en:
   news: 
     read_more: "Read more..."
   homepage:
+    no_concerts: "No upcoming concerts..."
     all_concerts: "All Concerts"
+    past_concerts: "Past concerts"

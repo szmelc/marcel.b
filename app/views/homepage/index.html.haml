@@ -1,2 +1,5 @@
 = render 'picture'
-= render 'upcoming_concerts'
+- if concerts.any?
+  = render 'concerts'
+- else
+  = render 'no_upcoming_concerts'

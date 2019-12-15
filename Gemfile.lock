@@ -48,6 +48,11 @@ GEM
       ransack (~> 2.1, >= 2.1.1)
       sassc-rails (~> 2.1)
       sprockets (>= 3.0, < 4.1)
+    activeadmin-trix (0.0.1)
+      activeadmin
+      trix
+    activeadmin_quill_editor (0.2.0)
+      activeadmin (>= 1.0)
     activejob (6.0.1)
       activesupport (= 6.0.1)
       globalid (>= 0.3.6)
@@ -373,6 +378,8 @@ GEM
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.10)
+    trix (0.10.1)
+      rails
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -401,6 +408,8 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  activeadmin-trix
+  activeadmin_quill_editor
   bootsnap (>= 1.4.2)
   bootstrap-sass (~> 3.3.6)
   bourbon
@@ -432,6 +441,7 @@ DEPENDENCIES
   shoulda-matchers
   spring
   spring-watcher-listen (~> 2.0.0)
+  trix
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

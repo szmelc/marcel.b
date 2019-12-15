@@ -6,6 +6,6 @@ class NewsController < ApplicationController
   private
 
   def find_news
-    @news = News.find(params[:id])
+    @news = News.find(params[:id]).decorate
   end
 end

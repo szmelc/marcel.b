@@ -97,7 +97,8 @@
     }
   }
 
-  &__concerts-wrapper {
+  &__concerts-wrapper,
+  &__no-concerts-wrapper {
     padding: 0 5%;
     position: relative;
     width: 100%;
@@ -105,6 +106,35 @@
     @media(min-width: $screen-md) {
       transform: translate(-50px, 0px);
       padding: 0;
+    }
+  }
+
+  &__no-concerts-title-container {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 200px;
+    @media(min-width: $screen-md) {
+      justify-content: center;
+      height: 70%;
+      padding-left: 100px;
+    }
+  }
+
+  &__no-concerts-title {
+    text-align: center;
+    -webkit-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    background-color: $white;    
+    padding: 30px 15px;
+    @media(min-width: $screen-md) {
+      padding: none;
+      box-shadow: none;
+      background: none;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
   }
 

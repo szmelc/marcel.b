@@ -1,0 +1,4 @@
+.homepage__no-concerts-wrapper
+  .homepage__no-concerts-title-container
+    %h1.homepage__no-concerts-title= t('homepage.no_concerts')
+    = button_tag t('homepage.past_concerts'), type: 'button', class: "button button__desktop-button homepage__button button--past-concerts", onclick: "location.href = '#{concerts_path}'"
