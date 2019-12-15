@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|pl/ do
     root to: 'homepage#index'
+    get '/news', to: 'news#index'
+    get '/news/:id', to: 'news#show', as: 'news_item'
     get '/bio', to: 'bio#index'
     get '/concerts', to: 'concerts#index'
     get '/contact', to: 'contact#index'
     get '/gallery', to: 'gallery#index'
-    get '/press', to: 'press#index'
+    get '/media', to: 'media#index'
     get '/projects', to: 'projects#index'
   end
 

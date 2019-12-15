@@ -1,0 +1,6 @@
+.news__news-wrapper.col-xs-12
+  - news_items.each do |news_item|
+    .news__row
+      - if news_item.available_in_locale_language
+        = render 'news_item', news_item: news_item
+        %hr.news__news-separator/

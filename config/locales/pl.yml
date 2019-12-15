@@ -18,15 +18,18 @@ pl:
     albums: "Albumy"
     buy_album: "Kup Płytę"
   navigation:
+    news: "aktualności"
     bio: "bio"
     concerts: "koncerty"
     projects: "projekty"
     gallery: "galeria"
-    press: "press"
+    media: "media"
     contact: "kontakt"
   header:
     marcel: "Marcel Baliński"
     pianist: "pianista"
     composer: "kompozytor"
+  news:
+    read_more: "Czytaj dalej..."
   homepage:
     all_concerts: "Wszystkie koncerty"

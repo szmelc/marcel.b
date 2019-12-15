@@ -17,6 +17,14 @@
     background-color: $orange;
   }
 
+  &__read-more {
+    padding: 12px 18px;
+    margin-top: 10px;
+    display: block;
+    margin: auto;
+    margin-right: 30px;
+  }
+
   &__buy-album {
     background-color: $orange;
     display: block;

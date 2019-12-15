@@ -1,0 +1,16 @@
+.news__news-item-wrapper
+  .news__news-item-title
+    - if current_page?(locale: :pl) || I18n.locale == :pl
+      = link_to news_item_path(news_item) do
+        %h3.news__news-item-title= news_item.polish_title
+    - elsif current_page?(locale: :en)
+      = link_to news_item_path(news_item) do
+        %h3.news__news-item-title= news_item.english_title
+    %span.news__news-item-date= news_item.date
+  .news__news-item-content-wrapper
+    - if current_page?(locale: :pl) || I18n.locale == :pl
+      %p.news__news-item-content= truncate(news_item.polish_content, length: 500, separator: ' ')
+    - elsif current_page?(locale: :en)
+      %p.news__news-item-content= truncate(news_item.english_content, length: 500, separator: ' ')
+  .news__news-item-read-more-wrapper
+    = button_tag t('news.read_more'), type: 'button', class: "button button__read-more", onclick: "location.href = '#{news_item_path(news_item)}'"

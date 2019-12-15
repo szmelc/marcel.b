@@ -49,15 +49,18 @@ en:
     albums: "Albums"
     buy_album: "Buy Album"
   navigation:
+    news: "news"
     bio: "bio"
     concerts: "concerts"
     projects: "projects"
     gallery: "gallery"
-    press: "press"
+    media: "media"
     contact: "contact"
   header:
     marcel: "Marcel Baliński"
     pianist: "pianist"
     composer: "composer"
+  news: 
+    read_more: "Read more..."
   homepage:
     all_concerts: "All Concerts"
