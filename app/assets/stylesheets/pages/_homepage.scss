@@ -101,9 +101,12 @@
     position: relative;
     // padding: 0 5%;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     transform: translate(0, -70px);
     @media(min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       background-color: none;
       padding: 30px 0 0 0;
       transform: translate(-50px, 0px);
@@ -113,6 +116,7 @@
   }
 
   &__news-item-container {
+    width: 100%;
     margin-bottom: 30px;
     background: $white;
     padding: 25px;
