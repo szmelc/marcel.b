@@ -1,9 +1,21 @@
 .bio {
   @media(min-width: $screen-md) {
     background-image: none;
-    max-height: 89vh;
+    max-height: 90vh;
     overflow: scroll;
-    // background-color: $white;
+    -webkit-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    background-color: $white;
+  }
+
+  &__wrapper {
+    padding: 15px 35px 35px 35px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 50px;
   }
 
   &__row {
@@ -11,13 +23,13 @@
     @media(min-width: $screen-md) {
       display: flex;
       flex-direction: row;
-      margin-bottom: 50px;
     }
   }
 
   &__header-photo {
     width: 100%;
     @include cover-bg;
+    background-position: 0 50%;
     height: 600px;
     background-image: image-url('bio/header.jpg');
     @media(min-width: $screen-md) {
@@ -69,7 +81,6 @@
       display: flex;
       align-items: center;
       padding: 30px 5%;
-      max-width: 50%;
     }
 
     &--order-first {
@@ -84,18 +95,9 @@
   &__text {
     font-size: $fs-4;
     line-height: 60px;
+    margin-bottom: 30px;
     @media(min-width: $screen-md) {
-      font-size: $fs-6;
-    }
-  }
-
-  p.bio__intro {
-    &::first-letter {
-      font-size: $fs-1;
-      float: left;
-      line-height: 60px;
-      padding-top: 5px;
-      padding-right: 8px;
+      font-size: $fs-7;
     }
   }
 

@@ -32,7 +32,7 @@ $bar-spacing: 18px;
 
   &__dropdown-project-link {
     margin-bottom: 15px;
-  }  
+  }
 
   &__menu-item {
     display: inline-block;
@@ -222,10 +222,13 @@ $bar-spacing: 18px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 200px;
+  min-width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
+  a {
+    display: block;
+  }
 }
 
 .dropdown:hover .dropdown-content {

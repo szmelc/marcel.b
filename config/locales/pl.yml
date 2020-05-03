@@ -18,6 +18,7 @@ pl:
     albums: "Albumy"
     buy_album: "Kup Płytę"
   navigation:
+    albums: "dyskografia"
     news: "aktualności"
     bio: "bio"
     concerts: "koncerty"

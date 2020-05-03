@@ -1,33 +1,25 @@
-.projects {
+.albums {
   flex: 1;
   // @include contain-bg;
   // background-image: url('colorful_waves_desktop.svg');
   @media(min-width: $screen-md) {
     min-height: 100%;
-    padding: 0 130px;
     max-height: 90vh;
     overflow: scroll;
-    background: none;
-    // -webkit-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
-    // -moz-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
-    // box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
-    // background-color: $white;
+    background: $white;
+    -webkit-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    background-color: $white;
   }
 
   @media(min-width: $screen-lg) {
     padding: 0 250px;
   }
 
-  &__projects-wrapper {
+  &__albums-wrapper {
     padding: 0;
-    @media(min-width: $screen-md) {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-  }
-
-  &__project-wrapper {
-    margin-bottom: 40px;
+    background: $white;
     @media(min-width: $screen-md) {
       padding: 15px 35px 35px 35px;
       background: $white;
@@ -35,22 +27,13 @@
       -moz-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
       box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
       padding-top: 50px;
+      padding-right: 15px;
+      padding-left: 15px;
     }
   }
 
-  &__project-header-container,
-  &__albums-header-container {
-    width: 100%;
-    background-color: $green;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 10px 0;
-    margin-bottom: 30px;
-    padding: 20px 0;
-    @media(min-width: $screen-md) {
-      display: none;
-    }
+  &__albums-wrapper {
+    padding: 0;
   }
 
   &__project-header {
@@ -162,12 +145,19 @@
     }
   }
 
-  &__project-description,
   &__album-description {
     line-height: 1.8em;
-    font-size: $fs-6;
+    font-size: $fs-4;
     @media(min-width: $screen-md) {
       font-size: $fs-7;
+    }
+  }
+
+  &__album-details {
+    padding: 0;
+    margin-bottom: 30px;
+    @media(min-width: $screen-md) {
+      padding: 0 15px;
     }
   }
 
@@ -180,4 +170,47 @@
       // box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
     }
   }
+
+  &__albums-header-container {
+    margin: 35px auto;
+  }
+
+  &__project-albums-header {
+    font-size: 3.5em;
+  }
+
+  &__album-cover {
+    width: 75%;
+    height: auto;
+    margin: 0 auto 40px;
+    display: block;
+    @media(min-width: $screen-md) {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+  }
+
+  &__album-title {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'MontserratRegular';
+    @media(min-width: $screen-md) {
+      font-size: $fs-4;
+      display: inline-block;
+      text-align: left;
+      display: block;
+    }
+  }
+
+  &__album-year {
+    font-size: $fs-2;
+    font-family: 'MontserratItalic';
+    text-align: center;
+    margin-bottom: 35px;
+    @media(min-width: $screen-md) {
+      font-size: $fs-5;
+      display: inline-block;
+    }
+  }
+
 }

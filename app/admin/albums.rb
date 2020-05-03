@@ -1,6 +1,7 @@
 ActiveAdmin.register Album do
   permit_params :buy_cd_link, :cover, :description, :name, :project_id,
                 :stream_link, :year, :english_description
+  menu parent: "Projects"
 
   index do
     selectable_column
@@ -20,7 +21,7 @@ ActiveAdmin.register Album do
       f.input :stream_link
       f.input :year
       f.input :project
-      f.file_field :cover, label: "Album Art"
+      f.file_field :cover, label: 'Album Art'
     end
     f.actions
   end

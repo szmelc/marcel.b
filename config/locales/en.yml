@@ -49,6 +49,7 @@ en:
     albums: "Albums"
     buy_album: "Buy Album"
   navigation:
+    albums: "albums"
     news: "news"
     bio: "bio"
     concerts: "concerts"
@@ -60,7 +61,7 @@ en:
     marcel: "Marcel Baliński"
     pianist: "pianist"
     composer: "composer"
-  news: 
+  news:
     read_more: "Read more..."
   homepage:
     no_concerts: "No upcoming concerts..."

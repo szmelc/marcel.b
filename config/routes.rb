@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     get '/gallery', to: 'gallery#index'
     get '/media', to: 'media#index'
     get '/projects', to: 'projects#index'
+    get '/albums', to: 'albums#index'
   end
 
   get '/fetch_concerts/:year', to: 'concerts#fetch_concerts', as: 'fetch_concerts'
