@@ -1,0 +1,7 @@
+.homepage__news-item-container
+  .homepage__news-item-title-container
+    = link_to news_item_path(news_item), class: 'homepage__news-item-title-link' do
+      %h1.homepage__news-item-title= news_item.title
+  .homepage__news-item-content-container
+    %p.homepage__news-item-content= news_item.content.to_plain_text.truncate(400)
+  = link_to t('news.read_more'), news_item_path(news_item), class: 'homepage__news-item-read-more'

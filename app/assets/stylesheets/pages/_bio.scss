@@ -28,10 +28,10 @@
 
   &__header-photo {
     width: 100%;
-    @include cover-bg;
+    @include parallax-bg;
     background-position: 0 50%;
     height: 600px;
-    background-image: image-url('bio/header.jpg');
+    background-image: image-url('bio/01_section_photo.jpg');
     @media(min-width: $screen-md) {
       height: 400px;
       width: 110%;

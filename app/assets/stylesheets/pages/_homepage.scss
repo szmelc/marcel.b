@@ -97,15 +97,57 @@
     }
   }
 
-  &__concerts-wrapper,
-  &__no-concerts-wrapper {
-    padding: 0 5%;
+  &__news-wrapper {
     position: relative;
-    width: 100%;
+    // padding: 0 5%;
+    width: 90%;
+    margin: auto;
     transform: translate(0, -70px);
     @media(min-width: $screen-md) {
+      background-color: none;
+      padding: 30px 0 0 0;
       transform: translate(-50px, 0px);
-      padding: 0;
+      overflow: scroll;
+      max-height: 90vh;
+    }
+  }
+
+  &__news-item-container {
+    margin-bottom: 30px;
+    background: $white;
+    padding: 25px;
+    -webkit-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
+    @media(min-width: $screen-md) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__news-item-title {
+
+  }
+
+  &__news-item-content {
+    font-size: $fs-4;
+    @media(min-width: $screen-md) {
+      font-size: $fs-7;
+    }
+  }
+
+  &__news-item-title-link {
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  &__news-item-read-more {
+    display: block;
+    text-align: right;
+    margin-right: 15px;
+    font-size: $fs-4;
+    @media(min-width: $screen-md) {
+      font-size: $fs-7;
     }
   }
 

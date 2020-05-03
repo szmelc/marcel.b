@@ -31,20 +31,23 @@
 
 en:
   bio:
-    intro: "Marcel Baliński - pianist, composer. Od dziecka kształcony \n
-            klasycznie. Absolwent Akademii Muzycznej w Krakowie oraz Akademii Muzycznej \n
-            w Łodzi w klasie fortepianu jazzowego."
-    projects: "Lider kwartetu Entropia Ensemble, z którym w 2018 roku wydał debiutancki album. \n
-              Członek zespołu Jerry & The Pelican System, z którym w maju 2019 roku wydał album w prestiżowej \n
-              serii Polish Jazz w wytwórni Warner Music Poland. Członek zespołu RASP Lovers, \n
-              którego debiutancki album ukaże się jesienią 2019 roku."
-    awards: "Dyrektor artystyczny oraz pomysłodawca Festiwalu Dwa Piętra w Łodzi. \n
-            Zdobywca nagrody Grand Prix podczas 10th Azoty Tarnów Jazz Contest w kategorii \n
-            zespołowej oraz solowej, II miejsce na Jazz Juniors, wyróżnienia Blue Note Poznań Jazz Competition."
-    style: "W jego stylu słychać wpływy muzyki klasycznej oraz europejskiej awangardy. \n
-           Jest aktywny na polskiej i międzynarodowej scenie muzycznej, współpracował m.in. \n
-           z: Zbigniew Namysłowski Quintet, Aga Zaryan, Wojtek Mazolewski Quintet, Elektro Camerata Varsoviensis.\n
-           Kompozytor muzyki filmowej oraz do spektakli teatralnych."
+    intro: "Marcel Baliński - born in 1995, a native of Łódź, pianist, composer and arranger.
+            Graduate of the Henryk Wieniawski General Music School of the first and second degree in Łódź, in the
+            class of classical piano, Academy of Music in Kraków, “Bednarska” Post-Secondary Jazz Study.
+            Currently a graduate student of the Grażyna and Kiejstut Bacewicz Academy of Music in Łódź. In September 2020 he will start studying composition at the Hochschule der Künste Bern in Switzerland.
+            Winner of awards: Artistic Scholarship of the Marshal of the Łódź Voivodeship 2020, Artistic Scholarship of the Mayor of Łódź 2020, Grand Prix in the solo category during the 10th Azoty Tarnów Jazz Contest, 2nd place together with Natalia Kordiak Quintet and an honourable mention during the Blue Note Poznań Competition 2017. He recorded 5 studio albums.
+            His performances have been shown on TVP Kultura several times."
+    projects: "Together with his own quartet Entropia Ensemble, he was a finalist of the international competition Jazz Juniors 2018, during which they received invitations to concerts at the Opus Jazz Club in Budapest and at the Nishville Jazz Festival in Serbia. The band won the Grand Prix at the 10th Azoty Tarnów Jazz Contest, which
+              allowed them to record their debut album “Entropia Ensemble” in November 2018. The album was promoted by an extensive tour in Poland. The album was recognized as “Jazz Debut of the Year” by the Polishjazz blogspot (according to Jędrzej Janicki). The band was at the top of the ranking for the best Polish acoustic band 2018 according to readers of Jazz Forum magazine.
+              Together with Jerry&The Pelican System, of which he is a co-founder, in May 2019 he released an album in the legendary Polish Jazz series (vol.83 - Polskie Nagrania - Warner Music Poland).
+              They played many concerts in Poland and abroad, in June 2020 a tour in the United States was planned (including Blue Note in New York) at the invitation of the Kosciuszko Foundation.
+              They actively perform in Poland and abroad (England, Germany, Spain, Belarus, Hungary, Romania, Luxembourg, Scotland). He has been invited many times to cooperate with, among others, the Kosciuszko Foundation:
+              Zbigniew Namysłowski, Agata Zaryan, Wojtek Mazolewski, Marcin Masecki, Jan Emil Młynarski, Jonas Due Steffensen."
+    awards: "Culture animator in Łódź. Originator and artistic director of the “Two Floors” Festival, whose first edition took
+            place in November 2019. Organizer of several dozen concerts in Łódź. In the years 2015 - 2016 he organized jam
+            sessions in the music club “Szafa”, from September 2016 to the present, he organizes weekly
+            jam sessions in the music club “KIJ”."
+    style: "He conducts educational activities: with young people at risk of social exclusion (author’s artistic workshops) in the Foundation of Activities, he led a piano class and accompanied during international workshops “Musical Masterpiece” in Belarus. He was the musical manager of a concert of carols, which was attended by the Vocal Group at the Occupational Therapy Workshops of the “Orpel” Cooperative. Creator of theatre and film music."
   projects:
     albums: "Albums"
     buy_album: "Buy Album"
@@ -53,6 +56,7 @@ en:
     news: "news"
     bio: "bio"
     concerts: "concerts"
+    homepage: "home"
     projects: "projects"
     gallery: "gallery"
     media: "media"

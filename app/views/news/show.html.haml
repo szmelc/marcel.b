@@ -1,13 +1,6 @@
-.col-xs-12
-  .news__news-item-wrapper
-    .news__news-item-title
-      - if current_page?(locale: :pl) || I18n.locale == :pl
-        %h3.news__news-item-title= news.polish_title
-      - elsif current_page?(locale: :en)
-        %h3.news__news-item-title= news.english_title
-      %span.news__news-item-date= news.date
-    .news__news-item-content-wrapper
-      - if current_page?(locale: :pl) || I18n.locale == :pl
-        %p.news__news-item-content= news.polish_content.body.html_safe
-      - elsif current_page?(locale: :en)
-        %p.news__news-item-content= news.english_content.body.html_safe
+.news-item.col-xs-12
+  .news-item__title-container
+    %h1.news-item__title= @news.title
+  .news-item__content-container
+    %p.news-item__content= (sanitize @news.content.body.to_plain_text, tags: %w( iframe ), attributes: %w(src source width height))
+
