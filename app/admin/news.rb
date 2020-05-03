@@ -23,8 +23,8 @@ ActiveAdmin.register News do
     f.inputs do
       f.input :polish_title
       f.input :english_title
-      f.rich_text_area :english_content, label: 'Polish Content'
       f.rich_text_area :polish_content, label: 'English Content'
+      f.rich_text_area :english_content, label: 'Polish Content'
     end
     f.actions
   end
