@@ -81,6 +81,24 @@ $bar-spacing: 18px;
     display: none;
   }
 
+  &__language-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid $green;
+    &--en {
+      background-image: image-url('flags/uk.svg')
+    }
+    &--pl {
+      background-image: image-url('flags/pl.png')
+    }
+  }
+
   &__slider {
     padding: 100px 30px;
     width: 100%;
@@ -134,10 +152,10 @@ $bar-spacing: 18px;
 
   &__language-picker {
     position: absolute;
-    top: 5px;
+    top: 14px;
     right: 20px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     float: right;
     display: flex;
     align-items: center;
@@ -150,6 +168,7 @@ $bar-spacing: 18px;
     text-decoration: none;
     font-size: 30px;
     color: $white;
+    visibility: hidden;
   }
 
   /*

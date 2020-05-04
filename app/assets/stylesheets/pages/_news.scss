@@ -11,11 +11,15 @@
   &__title-container {
     background-color: $green;
     margin-bottom: 30px;
+    padding: 5px 7px;
+    display: flex;
+    align-items: center;
   }
 
   &__title {
     color: $white;
-    font-size: 4em;
+    font-size: 3.5em;
+    margin: 0
   }
 
   &__content {
