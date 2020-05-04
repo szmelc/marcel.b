@@ -1,6 +1,9 @@
 class ConcertsController < ApplicationController
   expose_decorated(:concerts, collection: true, decorator: ConcertDecorator) do
-    Concert.where(date: Date.today.beginning_of_year..Date.today.end_of_year)
+    Concert.where(date: Date.today.beginning_of_year..Date.today.end_of_year).order('date desc')
+  end
+  expose(:years) do
+    Concert.pluck(:date).map(&:year).uniq.reject { |year| year == Date.today.year }
   end
 
   def fetch_concerts

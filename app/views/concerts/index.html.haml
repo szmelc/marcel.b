@@ -4,11 +4,14 @@
   = link_to current_year, fetch_concerts_path(year: current_year), class: "concerts__year-link active", remote: true
   - future_concerts_years.each do |year|
     = link_to year, fetch_concerts_path(year: year), class: "concerts__year-link", remote: true
-.concerts__years-slider-container.col-md-3.col-md-offset-1
-  - future_concerts_years.each do |year|
-    = link_to year, fetch_concerts_path(year: year), class: "concerts__year-link", remote: true
-  = link_to current_year, fetch_concerts_path(year: current_year), class: "concerts__year-link active", remote: true
-  - past_concerts_years.reverse.each do |year|
-    = link_to year, fetch_concerts_path(year: year), class: "concerts__year-link", remote: true
-.concerts__concerts-list-wrapper.col-xs-12.col-md-7.col-md-offset-1
-  = render 'concerts', concerts: concerts
+-# .concerts__years-slider-container.col-md-3.col-md-offset-1
+-#   - future_concerts_years.each do |year|
+-#     = link_to year, fetch_concerts_path(year: year), class: "concerts__year-link", remote: true
+-#   = link_to current_year, fetch_concerts_path(year: current_year), class: "concerts__year-link active", remote: true
+-#   - past_concerts_years.reverse.each do |year|
+-#     = link_to year, fetch_concerts_path(year: year), class: "concerts__year-link", remote: true
+.concerts__concerts-list-wrapper.col-xs-12.col-md-12
+  = render 'concerts', concerts: concerts, year: Date.today.year
+  - years.each do |year|
+    = render 'concerts', concerts: Concert.all.decorate.select { |c| c.date.year == year }, year: year
+
