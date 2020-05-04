@@ -13,5 +13,5 @@
 .concerts__concerts-list-wrapper.col-xs-12.col-md-12
   = render 'concerts', concerts: concerts, year: Date.today.year
   - years.each do |year|
-    = render 'concerts', concerts: Concert.all.decorate.select { |c| c.date.year == year }, year: year
+    = render 'concerts', concerts: Concert.all.order('date desc').decorate.select { |c| c.date.year == year }, year: year
 
