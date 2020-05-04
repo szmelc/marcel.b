@@ -37,10 +37,11 @@
   &__buy-album {
     background-color: $orange;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
     font-size: $fs-4;
     text-transform: uppercase;
     @media(min-width: $screen-md) {
+      padding: 10px 18px;
       margin: 0;
       font-size: $fs-7;
     }

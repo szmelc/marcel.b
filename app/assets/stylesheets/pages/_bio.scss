@@ -10,12 +10,15 @@
   }
 
   &__wrapper {
+    background: $grey-light;
     padding: 15px 35px 35px 35px;
-    background: #FFFFFF;
     -webkit-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
     padding-top: 50px;
+    @media(min-width: $screen-md) {
+      background-color: $white;
+    }
   }
 
   &__row {
@@ -28,11 +31,12 @@
 
   &__header-photo {
     width: 100%;
-    @include parallax-bg;
     background-position: 0 50%;
     height: 600px;
+    @include cover-bg;
     background-image: image-url('bio/01_section_photo.jpg');
     @media(min-width: $screen-md) {
+      @include parallax-bg;
       height: 400px;
       width: 110%;
       min-width: 370px;
@@ -97,7 +101,9 @@
     line-height: 60px;
     margin-bottom: 30px;
     @media(min-width: $screen-md) {
-      font-size: $fs-7;
+      margin-bottom: 15px;
+      line-height: 25px;
+      font-size: $fs-9;
     }
   }
 

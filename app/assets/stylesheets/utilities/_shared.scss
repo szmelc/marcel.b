@@ -4,6 +4,7 @@ html, body {
   display: flex;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  background-color: $grey-light;
   @media(max-width: $screen-md) {
     flex-direction: column;
   }
@@ -27,6 +28,7 @@ html, body {
   padding-left: 0 !important;
   padding-right: 0 !important;
   @media(max-width: $screen-md) {
+    background-color: $grey-light;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -38,13 +40,14 @@ html, body {
   min-height: 100%;
   background-size: 100%;
   background-position: bottom;
-  background-image: image-url('colorful_waves_mobile.svg');
+  // background-image: image-url('colorful_waves_mobile.svg');
   background-repeat: no-repeat;
+  background-color: $grey-light;
   @media(min-width: $screen-md) {
     margin-top: 106px;
     padding: 0 130px;
     min-height: auto;
-    background-image: image-url('fale_marcel_nowe-01.svg');
+    // background-image: image-url('fale_marcel_nowe-01.svg');
     background-position: 0px 0px;
     @include contain-bg;
     background-position: bottom right;

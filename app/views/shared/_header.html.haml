@@ -1,11 +1,13 @@
 .header
   .header__language-switcher
     - if current_page?(locale: :pl) || I18n.locale == :pl
-      = link_to(options = { locale: "en" }) do
-        %span.header__language.mobile-nav__language--en EN
+      .header__language-container.header__language-container--en
+        = link_to(options = { locale: "en" }) do
+          %span.header__language.mobile-nav__language--en EN
     - elsif current_page?(locale: :en)
-      = link_to(options = { locale: "pl" }) do
-        %span.header__language.mobile-nav__language--pl PL
+      .header__language-container.header__language-container--pl
+        = link_to(options = { locale: "pl" }) do
+          %span.header__language.mobile-nav__language--pl PL
   = link_to root_path do
     %h1.header-title= t('header.marcel')
     %h2.header-subtitle

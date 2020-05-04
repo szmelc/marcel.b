@@ -3,8 +3,8 @@ $bar-height: 8px;
 $bar-spacing: 18px;
 
 .nav {
-  background: $green;
-  height: 26px;
+  background: $white;
+  height: 23px;
   display: flex;
   justify-content: flex-end;
   margin: 0 130px;
@@ -13,7 +13,7 @@ $bar-spacing: 18px;
   box-shadow:  0px 6px 16px 0px rgba(0,0,0,0.2);
 
   @media(min-width: $screen-md) {
-    margin: 0 0 0 130px;
+    margin: 10px 0 0 130px;
     z-index: 20;
     width: calc(100% - 260px);
     position: fixed;
