@@ -41,7 +41,7 @@
     font-weight: 400;
     margin-bottom: 0;
     @media(min-width: $screen-md) {
-      font-size: 2em;
+      font-size: $fs-9;
     }
   }
 
@@ -172,7 +172,7 @@
     text-align: center;
     font-family: 'MontserratRegular';
     @media(min-width: $screen-md) {
-      font-size: $fs-4;
+      font-size: $fs-6;
       display: inline-block;
       text-align: left;
       display: block;
@@ -181,11 +181,11 @@
 
   &__album-year {
     font-size: $fs-2;
-    font-family: 'MontserratItalic';
+    font-family: 'MontserratRegular';
     text-align: center;
     margin-bottom: 35px;
     @media(min-width: $screen-md) {
-      font-size: $fs-5;
+      font-size: $fs-6;
       display: inline-block;
     }
   }

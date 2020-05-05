@@ -1,6 +1,6 @@
 ActiveAdmin.register Album do
   permit_params :buy_cd_link, :cover, :description, :name, :project_id,
-                :stream_link, :year, :english_description
+                :stream_link, :year, :english_description, :order
   menu parent: "Projects"
 
   index do
@@ -17,6 +17,7 @@ ActiveAdmin.register Album do
       f.input :name
       f.input :description
       f.input :english_description
+      f.input :order
       f.input :buy_cd_link
       f.input :stream_link
       f.input :year

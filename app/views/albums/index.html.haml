@@ -1,17 +1,22 @@
 - albums.each do |album|
-  .albums__album-container.col-md-12
-    - if album.cover.url.present?
-      .albums__album-cover-container.col-md-4
-        = image_tag album.cover.url, class: "albums__album-cover"
-    .albums__album-details.col-md-8.col-xs-12
+  .albums__album-container.col-md-6.col-xs-12
+    .albums__album-details.col-xs-12.visible-xs.visible-sm.hidden-md.hidden-lg
       .albums__album-details-container.col-md-12.col-xs-12
         %h2.albums__album-title= album.name
         %h4.albums__album-year= "(#{album.year})"
+    - if album.cover.url.present?
+      .albums__album-cover-container.col-md-4
+        = image_tag album.cover.url, class: "albums__album-cover"
+        - if album.buy_cd_link.present?
+          = button_tag t('projects.buy_album'), type: 'button', class: "button button__buy-album", onclick: "location.href = '#{album.buy_cd_link}'"
+    .albums__album-details.col-md-8.col-xs-12
+      .albums__album-details-container.col-md-12.col-xs-12
+        %h2.albums__album-title.hidden-xs.hidden-sm= album.name
+        %h4.albums__album-year.hidden-xs.hidden-sm= "(#{album.year})"
         .albums__album-description-container
           - if current_page?(locale: :pl) || I18n.locale == :pl
             .albums__album-description= simple_format(album.description)
           - elsif current_page?(locale: :en)
             .albums__album-description= simple_format(album.english_description)
-        - if album.buy_cd_link.present?
-          = button_tag t('projects.buy_album'), type: 'button', class: "button button__buy-album", onclick: "location.href = '#{album.buy_cd_link}'"
+
 

@@ -9,7 +9,7 @@
     %span.news__news-item-date= news_item.date
   .news__news-item-content-wrapper
     - if current_page?(locale: :pl) || I18n.locale == :pl
-      %p.news__news-item-content= news_item.polish_content.body.html_safe
+      -# %p.news__news-item-content= news_item.polish_content.body.html_safe
     - elsif current_page?(locale: :en)
       %p.news__news-item-content= news_item.english_content.body.html_safe
   .news__news-item-read-more-wrapper
