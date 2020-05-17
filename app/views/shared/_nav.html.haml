@@ -23,10 +23,10 @@
       = link_to controller: 'albums', action: "index" do
         .nav__menu-item-container
           %span= t("navigation.albums")
-    -# %li.nav__menu-item{ class: ("active" if controller_name == "media") }
-    -#   = link_to controller: "media", action: "index" do
-    -#     .nav__menu-item-container
-    -#       %span= t("navigation.media")
+    %li.nav__menu-item{ class: ("active" if controller_name == "media") }
+      = link_to controller: "media", action: "index" do
+        .nav__menu-item-container
+          %span= t("navigation.media")
     %li.nav__menu-item{ class: ("active" if controller_name == 'contact') }
       = link_to controller: 'contact', action: "index" do
         .nav__menu-item-container

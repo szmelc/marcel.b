@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   scope "(:locale)", locale: /en|pl/ do
     root to: 'homepage#index'
     get '/news', to: 'news#index'

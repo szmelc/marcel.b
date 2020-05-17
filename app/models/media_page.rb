@@ -1,0 +1,2 @@
+class MediaPage < ApplicationRecord
+end
