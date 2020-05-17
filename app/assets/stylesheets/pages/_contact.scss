@@ -18,7 +18,8 @@
     align-items: center;
   }
 
-  &__mail-address {
+  &__mail-address,
+  &__phone-number {
     font-family: 'MontserratItalic';
     font-size: $fs-2;
     margin: 20px auto;

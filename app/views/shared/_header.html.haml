@@ -4,7 +4,7 @@
       .header__language-container.header__language-container--en
         = link_to(options = { locale: "en" }) do
           %span.header__language.mobile-nav__language--en EN
-    - elsif current_page?(locale: :en)
+    - elsif current_page?(locale: :en) || I18n.locale == :en
       .header__language-container.header__language-container--pl
         = link_to(options = { locale: "pl" }) do
           %span.header__language.mobile-nav__language--pl PL
