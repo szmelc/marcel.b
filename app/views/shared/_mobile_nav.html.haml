@@ -12,7 +12,7 @@
           %span.mobile-nav__language.mobile-nav__language--pl PL
 .mobile-nav__slider
   %ul.mobile-nav__menu-items
-    - %w(homepage bio concerts projects albums contact).each do |page|
+    - %w(homepage bio concerts projects albums media contact).each do |page|
       %li.mobile-nav__menu-item{ class: ("active" if controller_name == page) }
         = link_to controller: page, action: "index" do
           .mobile-nav__menu-item-container
